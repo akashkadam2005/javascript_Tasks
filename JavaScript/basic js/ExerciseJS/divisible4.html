@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function divisible() {
+            var a = parseInt(document.getElementById("no").value)
+
+            if (a%5==0 && a%11==0) {
+                document.getElementById("ans").value=("divisible for 5 or 11")
+                // alert("divisible for 5 or 11")
+            }
+            else
+            {
+                document.getElementById("ans").value=("not divisible for 5 or 11")
+                // alert("not divisible for 5 or 11")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    ENTER THE NUMBER : <input type="text" name="" id="no">
+    <input type="button" value="Submit" onclick="divisible()">
+    <input type="text" name="" id="ans">
+</body>
+
+</html>

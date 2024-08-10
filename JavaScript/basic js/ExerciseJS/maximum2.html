@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+    <script>
+        function button()
+        {
+            var a=parseInt(document.getElementById("no1").value)
+            var b=parseInt(document.getElementById("no2").value)
+            var c=parseInt(document.getElementById("no3").value)
+
+            if(a>=b && a>=c)
+            {
+                document.getElementById("ans").value=a+("  is grater")
+                // alert("1st is grater")
+            }
+            else if(b>=a && b>=c)
+            {
+                // alert("2 is grater")
+                document.getElementById("ans").value=b+("   is grater")
+            }
+            else if(c>=a && c>=b)
+            {
+                // alert("3 is grater")
+                document.getElementById("ans").value=c+("   is grater")
+            }
+        }
+    </script>
+</head>
+<body>
+    ENTER THE NUMBER 1: <input type="text" name="" id="no1"><br><br>
+    ENTER THE NUMBER 2: <input type="text" name="" id="no2"><br><br>
+    ENTER THE NUMBER 3: <input type="text" name="" id="no3"><br><br>
+    <input type="button" value="Submit" onclick="button()"><br><br>
+    <input type="text" name="" id="ans">
+</body>
+</html>

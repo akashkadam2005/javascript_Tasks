@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function root (){
+
+            var a=parseInt(document.getElementById("a").value)
+            var b=parseInt(document.getElementById("b").value)
+            var c=parseInt(document.getElementById("c").value)
+
+            if(a=(-b + Math.sqrt(discriminant)) / (2 * a)||(b=-b - Math.sqrt(discriminant)) / (2 * a))
+            {
+                alert("The roots of quadratic equation are A and B.")
+            }
+            else{
+                alert("invalid input")
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter the first value : <input type="text" name="" id="a"><br><br>
+    Enter the second value : <input type="text" name="" id="b"><br><br>
+    Enter the third value : <input type="text" name="" id="c"><br><br>
+    <input type="button" value="submit" onclick="root()">
+</body>
+</html>

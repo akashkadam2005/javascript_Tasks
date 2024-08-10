@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function profit()
+        {
+            var a=parseInt(document.getElementById("a").value)
+            var ab=parseInt(document.getElementById("a1").value)
+
+            if(a<=ab){
+              document.getElementById("ans").value=("profit")
+
+            }
+            else if(a >=ab ){
+
+      document.getElementById("ans").value=("loss")
+
+            }
+
+            
+        }
+        
+    </script>
+</head>
+<body>
+    i am  : <input type="text" name="" id="a">
+    man : <input type="text" name="" id="a1"><br><br>
+
+    <input type="button" value="Submit" onclick="profit()">
+     profit or loss : <input type="text" name="" id="ans">
+</body>
+</html>

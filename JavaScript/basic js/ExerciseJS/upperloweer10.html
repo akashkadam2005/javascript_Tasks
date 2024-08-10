@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function digit()
+        {
+            var a= document.getElementById("a").value
+
+            if(a>="a" && a<="z")
+            {
+                document.getElementById("ans").value=("this is small alphabate")
+                // alert("this is small alphabate")
+            }
+            else if(a>="A" && a<="Z")
+            {
+                document.getElementById("ans").value=("this is capitals alphabate")
+                // alert("this is capitals alphabate")
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    ENTER THE VALUE : <input type="text" name="" id="a"><br><br>
+    <input type="button" value="SUMBIT" onclick="digit()"><br><br>
+    <input type="text" name="" id="ans">
+</body>
+</html>

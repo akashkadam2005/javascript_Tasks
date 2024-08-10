@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function leap()
+        {
+            var a=parseInt(document.getElementById("no").value)
+
+            if(a==366)
+            {
+                document.getElementById("ans").value=("leap year")
+            }
+            else
+            {
+                document.getElementById("ans").value=("Not leap year")
+            }
+        }
+    </script>
+</head>
+<body>
+   enter the number : <input type="text" name="" id="no">
+   <input type="button" value="Submit" onclick="leap()">
+   <input type="text" name="" id="ans">
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function marks()
+        {
+            var a=parseInt(document.getElementById("s1").value)
+            var b=parseInt(document.getElementById("s2").value)
+            var c=parseInt(document.getElementById("s3").value)
+            var d=parseInt(document.getElementById("s4").value)
+            var e=parseInt(document.getElementById("s5").value)
+            sum=a+b+c+d+e
+            document.getElementById("ans").value=sum
+            ave=sum/5
+            document.getElementById("ave").value=ave
+            per=sum/5
+            document.getElementById("pe").value=per
+
+        }
+    </script>
+</head>
+<body>
+    enter 1 st subjet marks : <input type="text" name="" id="s1"><br><br>
+    enter 2 nd subjet marks : <input type="text" name="" id="s2"><br><br>
+    enter 3 rd subjet marks : <input type="text" name="" id="s3"><br><br>
+    enter 4 th subjet marks : <input type="text" name="" id="s4"><br><br>
+    enter 5 th subjet marks : <input type="text" name="" id="s5"><br><br>
+    <input type="button" value="calculate" onclick="marks()"><br><br>
+    addition :<input type="text" name="" id="ans"><br><br>
+    average :<input type="text" name="" id="ave"><br><br>
+    persentage :<input type="text" name="" id="pe">
+</body>
+</html>

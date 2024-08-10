@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function even()
+        {
+            var a=document.getElementById("no").value 
+            
+            if(a%2==0)
+            {
+                document.getElementById("ans").value=("even number")
+                // alert("even number")
+            }
+            else
+            {
+                document.getElementById("ans").value=("odd number")
+                // alert("odd number")
+            }
+        }
+    </script>
+</head>
+<body>
+    ENTER THE NUMBER : <input type="text" name="" id="no"><br><br>
+    <input type="button" value="SUMBIT" onclick="even()"><br><br>
+    <input type="text" name="" id="ans">
+</body>
+</html>

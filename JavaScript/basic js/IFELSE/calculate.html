@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add() {
+            var a = parseInt(document.getElementById("no1").value)
+            var b = parseInt(document.getElementById("no2").value)
+            document.getElementById("result").value = (no1 +no2)
+            // alert("no1+no2")
+        }
+    </script>
+</head>
+
+<body>
+
+    Enter The First Number : <input type="text" name="" id="no1"><br><br>
+    <select name="" id="">
+        <option value="+" onclick="add()">+</option>
+        <option value="+" onclick="sub()">-</option>
+        <option value="+" onclick="mul()">*</option>
+        <option value="/" onclick="div()">/</option>
+
+    </select>
+    <br><br>
+    Enter The Secound Number : <input type="text" name="" id="no2"><br><br>
+    <input type="button" value="click me" onclick="add()"><br><br>
+    <input type="text" name="" id="result">
+
+
+</body>
+
+</html>

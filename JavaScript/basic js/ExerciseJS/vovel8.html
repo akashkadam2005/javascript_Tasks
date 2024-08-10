@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function vovel()
+        {
+
+            var v=document.getElementById("v").value
+
+            if(v=="a"||v=="e"||v=="i"||v=="o"||v=="u")
+            {
+                document.getElementById("ans").value=("it is vovel")
+                // alert("it is vovel")
+            }
+            else{
+                document.getElementById("ans").value=("it is not consonent")
+                // alert("it is not consonent")
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    ENTER THE VOVEL : <input type="text" name="" id="v">
+    <input type="button" value="SUMBIT" onclick="vovel()">
+    <input type="text" name="" id="ans">
+</body>
+</html>

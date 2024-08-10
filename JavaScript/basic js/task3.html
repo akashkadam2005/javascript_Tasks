@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addition()
+        {
+            var a=parseInt(document.getElementById("a").value)
+            var b=parseInt(document.getElementById("b").value)
+            // c=a+b
+            document.getElementById("add").value=a+b
+            document.getElementById("sub").value=a-b
+            document.getElementById("mul").value=a*b
+            document.getElementById("div").value=a/b
+            document.getElementById("mod").value=a%b
+            // alert(c)
+            
+            
+        }
+    </script>
+</head>
+<body>
+    Enter the 1st Numbere : <input type="text" name="" id="a"><br><br>
+    Enter the 2nd Numbere : <input type="text" name="" id="b"><br><br>
+
+    <input type="button" value="Sumbit" onclick="addition()"><br><br>
+   Addition : <input type="text" name="" id="add"><br><br>
+    Substaction: <input type="text" name="" id="sub"><br><br>
+    Multiplication<input type="text" name="" id="mul"><br><br>
+    dision : <input type="text" name="" id="div"><br><br>
+    Mod :<input type="text" name="" id="mod">
+    
+</body>
+</html>

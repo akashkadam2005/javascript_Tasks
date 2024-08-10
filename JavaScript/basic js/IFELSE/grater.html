@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function gratest()
+        {
+           var a=parseInt ( document.getElementById("no1").value)
+           var b=parseInt ( document.getElementById("no2").value)
+           
+
+           if(a>b)
+           {
+            alert("a is grater")
+           
+            document.getElementById("ans").value=a
+           }
+           else{
+            alert("b is grater")
+            document.getElementById("ans").value=b
+           }
+    }
+    function smallest()
+        {
+           
+            var a=parseInt ( document.getElementById("no1").value)
+           var b=parseInt ( document.getElementById("no2").value)
+
+           if(a<b)
+           {
+            alert("a is grater")
+            document.getElementById("ans").value=a
+           }
+           else{
+            alert("b is smaller")
+        
+            document.getElementById("ans").value=b
+           }
+    }
+    </script>
+</head>
+<body>
+    Enter the 1 st Number : <input type="number" name="" id="no1"><br><br>
+    Enter the 2 st Number : <input type="number" name="" id="no2"><br><br>
+    <input type="button" value="gratest" onclick="gratest()">
+    <input type="button" value="smallest" onclick="smallest()"><br><br>
+    <input type="text" name="" id="ans">
+</body>
+</html>

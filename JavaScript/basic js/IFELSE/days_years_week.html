@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function years()
+        {
+            var days=parseInt(document.getElementById("days").value)
+            a=days/365
+            document.getElementById("year").value=parseInt(a)
+            a=days%365
+            a=days/7
+            document.getElementById("week").value=parseInt(a)
+            
+            // document.getElementById("day").value=parseInt(a/7)
+            a=days%7
+             document.getElementById("day").value=parseInt(a)
+
+
+            
+
+
+
+        }
+    </script>
+</head>
+<body>
+    enter the value :  <input type="text" name="" id="days"><br><br>
+    Enter The Year : <input type="text" name="" id="year"><br><br>
+    Enter The Week : <input type="text" name="" id="week"><br><br>
+    Enter The day : <input type="text" name="" id="day"><br><br>
+
+    
+    <input type="button" value="Submit" onclick="years()">
+
+</body>
+</html>

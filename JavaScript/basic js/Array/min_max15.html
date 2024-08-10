@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var number=[10,78,65,45,58,70,]
+        function finda(array)
+        {
+           
+            return Math.max.apply(null,array)
+            
+
+        }
+        function findb(array)
+        {    
+                     
+       return Math.min.apply(null,array)
+        }
+        document.write(finda(number)+" is greter " +"<br>")
+        document.write(findb(number)+" is lower " + "<br>")
+        
+
+        // alert(finda(number))
+        // alert(findb(number))
+       
+    </script>
+</head>
+<body>
+    <!-- <input type="button" value="Submit" onclick="finda()">
+    <input type="button" value="Submit" onclick="findb()"> -->
+</body>
+</html>

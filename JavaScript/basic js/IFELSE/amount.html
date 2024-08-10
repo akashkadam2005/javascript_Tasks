@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function amount()
+        {
+        var amount=parseInt(document.getElementById("amount").value)
+        // alert(amount)
+        document.getElementById("ans").value=amount
+        
+         document.getElementById("result").value=(amount/2000)
+         b=amount%2000
+         document.getElementById("result").value=(amount/500)
+         b=amount%500
+
+        
+        
+
+
+        }
+        
+        
+        
+    </script>
+
+</head>
+<body>
+    Enter the amount : <input type="text" name="" id="amount"><br><br>
+    <input type="button" value="Sumbit" onclick="amount()"><br><br>
+     Amount :<input type="text" name="" id="ans"> <br><br>
+     Amount to Notes : <br><br>
+     2000 : <input type="text" name="" id="result"><br><br>
+     500 : <input type="text" name="" id="res"><br><br>
+     200 : <input type="text" name="" id="abc"><br><br>
+     100 : <input type="text" name="" id="dc"><br><br>
+     50 : <input type="text" name="" id="xyz">
+    
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum()
+        {
+            var limit=parseInt(document.getElementById("limit").value)
+            var choice=parseInt(document.getElementById("choice").value)
+            var sum=0
+
+            if(choice==1)
+            {
+                for(var i=0;i<=limit;i++)
+                {
+                    sum=sum+i
+                    console.log(sum);
+                
+                }
+                
+            }
+            else if(choice==2)
+            {
+                for(var i=0;i<=limit;i++)
+                {
+                    console.log(i);
+                }
+                
+            }
+            else if(choice==3)
+            {
+            
+                for(i=limit;i>1;i--)
+                {
+                    console.log(i);
+                }
+                // while (limit>=1) {
+                //    console.log(limit);
+                //     limit--
+                // }
+                
+
+            }
+            
+
+        }
+    </script>
+</head>
+<body>
+    Enter the limit : <input type="text" name="" id="limit"><br><br>
+    1. sum  2. asending 3.desending
+    <br><br>     
+    <input type="text" name="" id="choice"><br><br>
+    <input type="button" value="SUMBIT" onclick="sum()">
+    
+</body>
+</html>

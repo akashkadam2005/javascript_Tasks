@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function positive() {
+            var a = parseInt(document.getElementById("a").value)
+
+            if (a > 0) {
+                document.getElementById("ans").value = ("number is positive")
+                // alert("number is positive")
+            }
+            else if (a == 0) 
+            {
+                document.getElementById("ans").value = ("this is Zero")
+                // alert("this is Zero")
+            }
+            else if (a <0) 
+            {
+                document.getElementById("ans").value = ("number is negative")
+                // alert("number is negative")
+            }
+            
+
+        }
+
+    </script>
+</head>
+
+<body>
+    Enter the Number : <input type="text" name="" id="a"><br><br>
+    <input type="button" value="Submit" onclick="positive()"><br><br>
+    <input type="text" name="" id="ans">
+
+</body>
+
+</html>

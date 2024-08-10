@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function result() {
+
+            var a = parseInt(document.getElementById("a").value)
+            var b = parseInt(document.getElementById("b").value)
+            var c = parseInt(document.getElementById("c").value)
+            var d = parseInt(document.getElementById("d").value)
+            var e = parseInt(document.getElementById("e").value)
+            var ak = a + b + c + d + e
+            alert(ak)
+            document.getElementById("ans").value = ak
+            var per = ak / 5
+            parseFloat(document.getElementById("per").value = per)
+            alert(per)
+            if (per >= 90) {
+                alert("grade A")
+            }
+            else if (per >= 80) {
+                alert("grade B")
+            }
+            else if (per >= 70) {
+                alert("grade C")
+            }
+            else if (per >= 60) {
+                alert("grade D")
+            }
+            else if (per >= 40) {
+                alert("grade E")
+            }
+            else if (per <= 40) {
+                alert("grade F")
+            }
+
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    Phisycs marks : <input type="text" name="" id="a"><br><br>
+    Chemistry marks: <input type="text" name="" id="b"><br><br>
+    Biology marks : <input type="text" name="" id="c"><br><br>
+    Mathmatics marks:<input type="text" name="" id="d"><br><br>
+    Computer marks : <input type="text" name="" id="e"><br><br>
+    <input type="button" value="Submit" onclick="result()"><br><br>
+    Addition : <input type="text" name="" id="ans"><br><br>
+    persentage : <input type="text" name="" id="per">
+
+
+</body>
+
+</html>

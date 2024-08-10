@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q1</title>
+    <script>
+        function button()
+        {
+            var a=parseInt(document.getElementById("no1").value)
+            var b=parseInt(document.getElementById("no2").value)
+
+            if(a>=b)
+            {
+                document.getElementById("ans").value=("1 is grater")
+                // alert("1st is grater")
+            }
+            else{
+                // alert("2 is grater")
+                document.getElementById("ans").value=("2 is grater")
+            }
+        }
+    </script>
+</head>
+<body>
+    ENTER THE NUMBER 1: <input type="text" name="" id="no1"><br><br>
+    ENTER THE NUMBER 2: <input type="text" name="" id="no2"><br><br>
+    <input type="button" value="Submit" onclick="button()"><br><br>
+    <input type="text" name="" id="ans">
+</body>
+</html>

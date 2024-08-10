@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function addition()
+{
+    var a=parseInt(document.getElementById("a").value)
+    var b=parseInt(document.getElementById("b").value)
+    document.getElementById("add").value=(a+b)
+    document.getElementById("sub").value=(a-b)
+    document.getElementById("mul").value=(a*b)
+    document.getElementById("div").value=(a/b)
+    document.getElementById("mod").value=(a%b)
+    
+
+}
+
+
+
+    </script>
+</head>
+<body>
+    
+   A Number : <input type="text" name="" id="a"><br/><br/>
+   B Number : <input type="text" name="" id="b"><br/><br/>
+   <input type="button" value="Click me" onclick=addition()><br/><br/>
+   addition : <input type="text" name="" id="add"><br><br>
+   substaction : <input type="text" name="" id="sub"><br><br>
+   multiplacation : <input type="text" name="" id="mul"><br><br>
+   division : <input type="text" name="" id="div"><br><br>
+   mod : <input type="text" name="" id="mod"><br><br>
+
+
+</body>
+</html>
+

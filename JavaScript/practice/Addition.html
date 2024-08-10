@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var a=parseInt(document.getElementById('a').value)
+            var b=parseInt(document.getElementById('b').value)
+            var c=a+b
+            document.getElementById('total').value=c
+        } 
+        function sub(){
+            var a=parseInt(document.getElementById('a').value)
+            var b=parseInt(document.getElementById('b').value)
+            var c=a-b
+            document.getElementById('total').value=c
+        } 
+        function mul(){
+            var a=parseInt(document.getElementById('a').value)
+            var b=parseInt(document.getElementById('b').value)
+            var c=a*b
+            document.getElementById('total').value=c
+        } 
+        function div(){
+            var a=parseInt(document.getElementById('a').value)
+            var b=parseInt(document.getElementById('b').value)
+            var c=a/b
+            document.getElementById('total').value=c
+        } 
+        function mod(){
+            var a=parseInt(document.getElementById('a').value)
+            var b=parseInt(document.getElementById('b').value)
+            var c=a%b
+            document.getElementById('total').value=c
+        } 
+    </script>
+</head>
+<body>
+    Enter 1st Number : <input type="text" name="" id="a"><br><br>
+    Enter 2nd Number : <input type="text" name="" id="b"><br><br>
+    ArithMatic Oprations :
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+    <button onclick="mod()">%</button><br><br>
+
+    Total : <input type="text" name="" id="total">
+</body>
+</html>

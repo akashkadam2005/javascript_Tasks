@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function celcius()
+        {
+            var a=parseInt(document.getElementById("a").value)
+
+           b=(a-32)* 9/5
+           document.getElementById("ans").value=b
+        }
+        
+    </script>
+</head>
+<body>
+    enter temprrature in celsius : <input type="text" name="" id="a">
+    <input type="button" value="Submit" onclick="celcius()">
+    fahrenheit : <input type="text" name="" id="ans">
+</body>
+</html>

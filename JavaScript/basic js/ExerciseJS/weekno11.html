@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function digit() {
+            var day= document.getElementById("day").value
+
+            switch (day) {
+                case '1':
+                    document.getElementById("ans").value=(sunday)
+                    // alert("sunday")
+                    break;
+                    case '2':
+                    document.getElementById("ans").value=(monday)
+                    // alert("monday")
+                    break;
+                    case '3':
+                    document.getElementById("ans").value=(tusday)
+                    // alert("tusday")
+                    break;
+                    case '4':
+                    document.getElementById("ans").value=(wensday)
+                    // alert("wenesday")
+                    break;
+                    case '5':
+                    document.getElementById("ans").value=(thursday)
+                    // alert("thursday")
+                    break;
+                    case '6':
+                    document.getElementById("ans").value=(friday)
+                    // alert("friday")
+                    break;
+                    case '7':
+                    document.getElementById("ans").value=(saturday)
+                    // alert("saturday")
+                    break;
+            
+                default:
+                    alert("invalid input")
+                    break;
+            }
+
+           
+            }
+
+    </script>
+</head>
+
+<body>
+    ENTER THE VALUE : <input type="text" name="" id="day"><br><br>
+    <input type="button" value="SUMBIT" onclick="digit()"><br><br>
+    <input type="text" name="" id="ans">
+
+</body>
+
+</html>
