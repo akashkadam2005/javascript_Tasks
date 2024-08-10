@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ak()
+        {
+            var a=parseInt(document.getElementById("a").value)
+            var b=parseInt(document.getElementById("b").value)
+            var c=parseInt(document.getElementById("c").value)
+            var d=parseInt(document.getElementById("d").value)
+            var e=parseInt(document.getElementById("e").value)
+            var f=parseInt(document.getElementById("f").value)
+            var n=a+b+c+d+e+f
+            document.getElementById("total").value=n
+            per=n/600*100
+            document.getElementById("per").value=per
+           
+            if(per<34)
+            {
+                document.getElementById("grade").value="fail"
+                document.getElementById("grade").style.backgroundColor="red"
+            }
+            else if(per>35 && per<50)
+            {
+                document.getElementById("grade").value="pass"
+                document.getElementById("grade").style.backgroundColor="Green"
+            }
+            else if(per>50 && per<60)
+            {
+                document.getElementById("grade").value="Secound class"
+                document.getElementById("grade").style.backgroundColor="Green"
+            }
+            else if(per>60 && per<70)
+            {
+                document.getElementById("grade").value="first class"
+                document.getElementById("grade").style.backgroundColor="Green"
+            }
+            else if(per>70 && per<100)
+            {
+                document.getElementById("grade").value="Distriction"
+                document.getElementById("grade").style.backgroundColor="Green"
+            }
+            else{
+                document.getElementById("grade").value="0"
+            }
+        }
+    </script>
+</head>
+<body>
+    <table border="1">
+    <tr>
+        <td>sr.no</td>
+        <td>Name</td>
+        <td>sub1</td>
+        <td>sub2</td>
+        <td>sub3</td>
+        <td>sub4</td>
+        <td>sub5</td>
+        <td>sub6</td>
+        <td>Total Marks</td>
+        <td>Persentage</td>
+        <td>Grade</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Akash</td>
+        <td onkeyup="ak()"><input type="text" id="a"></td>
+        <td onkeyup="ak()"><input type="text" id="b"></td>
+        <td onkeyup="ak()"><input type="text" id="c"></td>
+        <td onkeyup="ak()"><input type="text" id="d"></td>
+        <td onkeyup="ak()"><input type="text" id="e"></td>
+        <td onkeyup="ak()"><input type="text" id="f"></td>
+        <td onkeyup="ak()"><input type="text"  id="total"></td>
+        <td onkeyup="ak()"><input type="text"  id="per"></td>
+        <td onkeyup="ak()"><input type="text" id="grade"></td>
+      </tr>
+      
+    </table>
+</body>
+</html>
+    

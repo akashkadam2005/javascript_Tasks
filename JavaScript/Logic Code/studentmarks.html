@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function ak() {
+      //1st
+      var a = parseInt(document.getElementById("a").value)
+      var b = parseInt(document.getElementById("b").value)
+      var c = parseInt(document.getElementById("c").value)
+      var d = parseInt(document.getElementById("d").value)
+      var e = parseInt(document.getElementById("e").value)
+      var f = parseInt(document.getElementById("f").value)
+      var n = a + b + c + d + e + f
+      parseInt(document.getElementById("total").value = n)
+      var p = n / 600 * 100
+      document.getElementById("per").value = p
+      if (p < 34) {
+        document.getElementById("grade").value = "fail"
+        document.getElementById("grade").style.borderColor = "red"
+      }
+      else if (p > 35 && p < 50) {
+        document.getElementById("grade").value = "pass"
+        document.getElementById("grade").style.borderColor = "green"
+      }
+      else if (p > 50 && p < 60) {
+        document.getElementById("grade").value = "second class"
+        document.getElementById("grade").style.borderColor = "green"
+      }
+      else if (p > 60 && p < 70) {
+        document.getElementById("grade").value = " first class"
+        document.getElementById("grade").style.borderColor = "green"
+      }
+      else if (p > 70 && p < 100) {
+        document.getElementById("grade").value = " Distriction"
+        document.getElementById("grade").style.borderColor = "green"
+      }
+      else {
+        document.getElementById("grade").value = "0"
+      }
+
+
+      //2nd
+      var a1 = parseInt(document.getElementById("a1").value)
+      var a2 = parseInt(document.getElementById("a2").value)
+      var a3 = parseInt(document.getElementById("a3").value)
+      var a4 = parseInt(document.getElementById("a4").value)
+      var a5 = parseInt(document.getElementById("a5").value)
+      var a6 = parseInt(document.getElementById("a6").value)
+      var m = a1 + a2 + a3 + a4 + a5 + a6
+      parseInt(document.getElementById("atotal").value = m)
+      var pa = m / 600 * 100
+      document.getElementById("aper").value = pa
+      if (pa < 34) {
+        document.getElementById("agrade").value = "fail"
+        document.getElementById("agrade").style.borderColor = "red"
+      }
+      else if (pa > 35 && pa < 50) {
+        document.getElementById("agrade").value = "pass"
+        document.getElementById("agrade").style.borderColor = "green"
+      }
+      else if (pa > 50 && pa < 60) {
+        document.getElementById("agrade").value = "second class"
+        document.getElementById("agrade").style.borderColor = "green"
+      }
+      else if (pa > 60 && pa < 70) {
+        document.getElementById("agrade").value = " first class"
+        document.getElementById("agrade").style.borderColor = "green"
+      }
+      else if (pa > 70 && pa < 100) {
+        document.getElementById("agrade").value = " Distriction"
+        document.getElementById("agrade").style.borderColor = "green"
+      }
+      else {
+        document.getElementById("agrade").value = "0"
+      }
+      //3rd
+      var a1 = parseInt(document.getElementById("b1").value)
+      var a2 = parseInt(document.getElementById("b2").value)
+      var a3 = parseInt(document.getElementById("b3").value)
+      var a4 = parseInt(document.getElementById("b4").value)
+      var a5 = parseInt(document.getElementById("b5").value)
+      var a6 = parseInt(document.getElementById("b6").value)
+      var o = a1 + a2 + a3 + a4 + a5 + a6
+      parseInt(document.getElementById("btotal").value = o)
+      var pb = o / 600 * 100
+      document.getElementById("bper").value = pb
+      if (pb < 34) {
+        document.getElementById("bgrade").value = "fail"
+        document.getElementById("bgrade").style.borderColor = "red"
+      }
+      else if (pb > 35 && pb < 50) {
+        document.getElementById("bgrade").value = "pass"
+        document.getElementById("bgrade").style.borderColor = "green"
+      }
+      else if (pb > 50 && pb < 60) {
+        document.getElementById("bgrade").value = "second class"
+        document.getElementById("bgrade").style.borderColor = "green"
+      }
+      else if (pb > 60 && pb < 70) {
+        document.getElementById("bgrade").value = " first class"
+        document.getElementById("bgrade").style.borderColor = "green"
+      }
+      else if (pb > 70 && pb < 100) {
+        document.getElementById("bgrade").value = " Distriction"
+        document.getElementById("bgrade").style.borderColor = "green"
+      }
+      else {
+        document.getElementById("bgrade").value = "0"
+      }
+      //4th
+      var a1 = parseInt(document.getElementById("c1").value)
+      var a2 = parseInt(document.getElementById("c2").value)
+      var a3 = parseInt(document.getElementById("c3").value)
+      var a4 = parseInt(document.getElementById("c4").value)
+      var a5 = parseInt(document.getElementById("c5").value)
+      var a6 = parseInt(document.getElementById("c6").value)
+      var q = a1 + a2 + a3 + a4 + a5 + a6
+      parseInt(document.getElementById("ctotal").value = q)
+      var pc = q / 600 * 100
+      document.getElementById("cper").value = pc
+      if (pc < 34) {
+        document.getElementById("cgrade").value = "fail"
+        document.getElementById("cgrade").style.borderColor = "red"
+      }
+      else if (pc > 35 && pc < 50) {
+        document.getElementById("cgrade").value = "pass"
+        document.getElementById("cgrade").style.borderColor = "green"
+      }
+      else if (pc > 50 && pc < 60) {
+        document.getElementById("cgrade").value = "second class"
+        document.getElementById("cgrade").style.borderColor = "green"
+      }
+      else if (pc > 60 && pc < 70) {
+        document.getElementById("cgrade").value = " first class"
+        document.getElementById("cgrade").style.borderColor = "green"
+      }
+      else if (pc > 70 && pc < 100) {
+        document.getElementById("cgrade").value = " Distriction"
+        document.getElementById("cgrade").style.borderColor = "green"
+      }
+      else {
+        document.getElementById("cgrade").value = "0"
+      }
+      //5th
+      var a1 = parseInt(document.getElementById("d1").value)
+      var a2 = parseInt(document.getElementById("d2").value)
+      var a3 = parseInt(document.getElementById("d3").value)
+      var a4 = parseInt(document.getElementById("d4").value)
+      var a5 = parseInt(document.getElementById("d5").value)
+      var a6 = parseInt(document.getElementById("d6").value)
+      var r = a1 + a2 + a3 + a4 + a5 + a6
+      parseInt(document.getElementById("dtotal").value = r)
+      var pd = r / 600 * 100
+      document.getElementById("dper").value = pd
+      if (pd < 34) {
+        document.getElementById("dgrade").value = "fail"
+        document.getElementById("dgrade").style.borderColor = "red"
+      }
+      else if (pd > 35 && pd < 50) {
+        document.getElementById("dgrade").value = "pass"
+        document.getElementById("dgrade").style.borderColor = "green"
+      }
+      else if (pd > 50 && pd < 60) {
+        document.getElementById("dgrade").value = "second class"
+        document.getElementById("dgrade").style.borderColor = "green"
+      }
+      else if (pd > 60 && pd < 70) {
+        document.getElementById("dgrade").value = " first class"
+        document.getElementById("dgrade").style.borderColor = "green"
+      }
+      else if (pd > 70 && pd < 100) {
+        document.getElementById("dgrade").value = " Distriction"
+        document.getElementById("dgrade").style.borderColor = "green"
+      }
+      else {
+        document.getElementById("dgrade").value = "0"
+      }
+      //6th
+      var a1 = parseInt(document.getElementById("e1").value)
+      var a2 = parseInt(document.getElementById("e2").value)
+      var a3 = parseInt(document.getElementById("e3").value)
+      var a4 = parseInt(document.getElementById("e4").value)
+      var a5 = parseInt(document.getElementById("e5").value)
+      var a6 = parseInt(document.getElementById("e6").value)
+      var s = a1 + a2 + a3 + a4 + a5 + a6
+      parseInt(document.getElementById("etotal").value = s)
+      var pe = s / 600 * 100
+      document.getElementById("eper").value = pe
+      if (pe < 34) {
+        document.getElementById("egrade").value = "fail"
+        document.getElementById("egrade").style.borderColor = "red"
+      }
+      else if (pe > 35 && pe < 50) {
+        document.getElementById("egrade").value = "pass"
+        document.getElementById("egrade").style.borderColor = "green"
+      }
+      else if (pe > 50 && pe < 60) {
+        document.getElementById("egrade").value = "second class"
+        document.getElementById("egrade").style.borderColor = "green"
+      }
+      else if (pe > 60 && pe < 70) {
+        document.getElementById("egrade").value = " first class"
+        document.getElementById("egrade").style.borderColor = "green"
+      }
+      else if (pe > 70 && pe < 100) {
+        document.getElementById("egrade").value = " Distriction"
+        document.getElementById("egrade").style.borderColor = "green"
+      }
+      else {
+        document.getElementById("egrade").value = "0"
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <table border="1">
+    <tr>
+      <td>sr.no</td>
+      <td>Name</td>
+      <td>sub1</td>
+      <td>sub2</td>
+      <td>sub3</td>
+      <td>sub4</td>
+      <td>sub5</td>
+      <td>sub6</td>
+      <td>Total Marks</td>
+      <td>Persentage</td>
+      <td>Grade</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Akash</td>
+      <td onkeyup="ak()"><input type="text" id="a"></td>
+      <td onkeyup="ak()"><input type="text" id="b"></td>
+      <td onkeyup="ak()"><input type="text" id="c"></td>
+      <td onkeyup="ak()"><input type="text" id="d"></td>
+      <td onkeyup="ak()"><input type="text" id="e"></td>
+      <td onkeyup="ak()"><input type="text" id="f"></td>
+      <td onkeyup="ak()"><input type="text" id="total"></td>
+      <td onkeyup="ak()"><input type="text" id="per"></td>
+      <td onkeyup="ak()"><input type="text" id="grade"></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>prashant</td>
+      <td onkeyup="ak()"><input type="text" id="a1"></td>
+      <td onkeyup="ak()"><input type="text" id="a2"></td>
+      <td onkeyup="ak()"><input type="text" id="a3"></td>
+      <td onkeyup="ak()"><input type="text" id="a4"></td>
+      <td onkeyup="ak()"><input type="text" id="a5"></td>
+      <td onkeyup="ak()"><input type="text" id="a6"></td>
+      <td><input type="text" id="atotal"></td>
+      <td><input type="text" id="aper"></td>
+      <td><input type="text" id="agrade"></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>pranav</td>
+      <td onkeyup="ak()"><input type="text" id="b1"></td>
+      <td onkeyup="ak()"><input type="text" id="b2"></td>
+      <td onkeyup="ak()"><input type="text" id="b3"></td>
+      <td onkeyup="ak()"><input type="text" id="b4"></td>
+      <td onkeyup="ak()"><input type="text" id="b5"></td>
+      <td onkeyup="ak()"><input type="text" id="b6"></td>
+      <td><input type="text" id="btotal"></td>
+      <td><input type="text" id="bper"></td>
+      <td><input type="text" id="bgrade"></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>swaraj</td>
+      <td onkeyup="ak()"><input type="text" id="c1"></td>
+      <td onkeyup="ak()"><input type="text" id="c2"></td>
+      <td onkeyup="ak()"><input type="text" id="c3"></td>
+      <td onkeyup="ak()"><input type="text" id="c4"></td>
+      <td onkeyup="ak()"><input type="text" id="c5"></td>
+      <td onkeyup="ak()"><input type="text" id="c6"></td>
+      <td><input type="text" id="ctotal"></td>
+      <td><input type="text" id="cper"></td>
+      <td><input type="text" id="cgrade"></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Damuu</td>
+      <td onkeyup="ak()"><input type="text" id="d1"></td>
+      <td onkeyup="ak()"><input type="text" id="d2"></td>
+      <td onkeyup="ak()"><input type="text" id="d3"></td>
+      <td onkeyup="ak()"><input type="text" id="d4"></td>
+      <td onkeyup="ak()"><input type="text" id="d5"></td>
+      <td onkeyup="ak()"><input type="text" id="d6"></td>
+      <td><input type="text" id="dtotal"></td>
+      <td><input type="text" id="dper"></td>
+      <td><input type="text" id="dgrade"></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>parth</td>
+      <td onkeyup="ak()"><input type="text" id="e1"></td>
+      <td onkeyup="ak()"><input type="text" id="e2"></td>
+      <td onkeyup="ak()"><input type="text" id="e3"></td>
+      <td onkeyup="ak()"><input type="text" id="e4"></td>
+      <td onkeyup="ak()"><input type="text" id="e5"></td>
+      <td onkeyup="ak()"><input type="text" id="e6"></td>
+      <td><input type="text" id="etotal"></td>
+      <td><input type="text" id="eper"></td>
+      <td><input type="text" id="egrade"></td>
+
+
+  </table>
+</body>
+
+</html>
